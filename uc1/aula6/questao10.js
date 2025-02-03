@@ -30,14 +30,14 @@
 
 let pessoas = [];
 
-// Coletar os dados das 10 pessoas
-for (let i = 0; i < 10; i++) {
-  let nome = prompt(`Digite o nome da pessoa ${i + 1}:`);
-  let cidade = prompt(`Digite a cidade da pessoa ${i + 1}:`);
+
+for (let i = 0; i < 3; i++) {
+  let nome = prompt("Digite o nome da pessoa "+(i+1)+":");
+  let cidade = prompt("Digite a cidade da pessoa "+(i+1)+":");
   pessoas.push({ nome, cidade });
 }
 
-// Loop para exibir o nome e cidade conforme o índice informado pelo usuário
+
 while (true) {
   let indice = prompt('Digite um número entre 0 e 9 para ver o nome e a cidade, ou "sair" para encerrar:');
 
@@ -47,9 +47,16 @@ while (true) {
 
   indice = parseInt(indice);
 
-  if (indice >= 0 && indice < 10) {
-    alert(`Nome: ${pessoas[indice].nome}, Cidade: ${pessoas[indice].cidade}`);
+  if (indice >= 0 && indice < 3) {
+   
+    alert("Nome: "+pessoas[indice].nome+ ", Cidade: "+pessoas[indice].cidade)
   } else {
     alert('Índice inválido. Por favor, digite um número entre 0 e 9.');
   }
 }
+
+
+
+
+
+ // alert(`Nome: ${pessoas[indice].nome}, Cidade: ${pessoas[indice].cidade}`);
