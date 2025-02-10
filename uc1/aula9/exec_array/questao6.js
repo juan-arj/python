@@ -14,7 +14,7 @@ for(i= 0; i<3;i++){
     soma += nota
 }
 
-media = soma /3
+media = soma/3
 
 document.write("A média da sala foi: "+media+"<br>")
 

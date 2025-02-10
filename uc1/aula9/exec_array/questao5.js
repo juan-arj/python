@@ -11,7 +11,6 @@ while (true) {
     }
   
     indice = parseInt(indice);
-      
     alert("O dia da semana é "+ dias[indice])
     
 }
