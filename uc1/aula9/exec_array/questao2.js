@@ -4,7 +4,12 @@ lista = []
 // let numero1 = parseInt(prompt("Digite o primeiro numero"))
 // let numero2 = parseInt(prompt("Digite o segundo numero"))
 // let numero3 = parseInt(prompt("Digite o terceiro numero"))
-
+for (i=0;i<3;i++){
+    let valor = parseInt(prompt("Digite o "+(i+1)+"° número"))
+    lista.push(valor)
+}
+let maior_num = Math.max(...lista)
+document.write("O maor numero é: "+maior_num)
 
 // lista.push(numero1);
 // lista.push(numero2);
@@ -12,12 +17,12 @@ lista = []
 
 
 
-for(let i= 0; i<3;i++){
-    let valor = parseInt(prompt("Digite o "+(i+1)+"° numero"))
-    lista.push(valor)
-}
-let maiorNumero = Math.max(...lista)
-document.write("O maior numero é: "+maiorNumero)
+// for(let i= 0; i<3;i++){
+//     let valor = parseInt(prompt("Digite o "+(i+1)+"° numero"))
+//     lista.push(valor)
+// }
+// let maiorNumero = Math.max(...lista)
+// document.write("O maior numero é: "+maiorNumero)
 
 
 
